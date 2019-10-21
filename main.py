@@ -105,6 +105,7 @@ class MOGP(object):
                 dm_dw[i, j] = (kxtX_Eij - kxtX_B_kXX_B_inv.dot(kXX_Eij)).dot(kXX_B_inv_y)
 
         return dm_ds, dm_dn, dm_dl, dm_dw
+
     '''
     def dv(self, t):
         kXX_B_inv_y = self.kXX_B_inv.dot(self.y)
